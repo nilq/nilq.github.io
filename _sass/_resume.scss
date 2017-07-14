@@ -41,11 +41,8 @@ dt, dd {
 
 a {
     color: black!important;
-    background: rgba(245, 215, 110, .5);
-    transition: all linear .2s;
 
     &:hover {
-        background: rgba(245, 215, 110, 1);
         text-decoration: none;
     }
 }

@@ -1,10 +1,16 @@
 <header>
     <div class="container">
-        <div class="intro">
-            <p class="intro__pre">Hello</p>
-            <p class="intro__main">My name is <span>{{ site.name }}</span>, a {{ site.job }} who loves all things {{ site.languages }}</p>
-            <p class="intro__post">{{ site.location }}</p>
+        <div style="display: inline">
+          <div class="intro" style="display: inline">            
+              <p class="intro__pre">yes hello</p>
+              <p class="intro__main">my name is <span>{{ site.name }}</span>, a {{ site.job }} who does things,</p>
+              <p class="intro__pre">{{ site.languages }}</p>
+              <br>
+              <b class="intro__post">{{ site.location }}</b>
+          </div>
         </div>
+        
+        <br><br>
 
         {{ if site.github_username or site.codepen_username or site.twitter_username or site.email_address }}
         <div class="social">

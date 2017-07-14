@@ -1,6 +1,10 @@
 // @name Header
 // @description All header styles
 
+html, body {
+  font-family: Comic Sans MS
+}
+
 header {
     border-bottom: 1px solid #edefee;
     padding: ($spacer * 2) 0;

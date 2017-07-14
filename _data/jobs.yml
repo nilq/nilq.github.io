@@ -1,7 +1,11 @@
--   title: Engineering Lead
-    company: Company X
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+-   title: 3rd place
+    company: HACK4DK
+    description: Participated in the HACK4DK hackathon about hacking your heritage, where I nailed the 3rd place and won a few mugs and a t-shirt, by obscuring data and making a Flappy Bird game. 
 
--   title: Front end developer
-    company: Company Y
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+-   title: Best Game
+    company: Codingpirates Game Jam
+    description: My squad and I made a simple Unity game back in the day and won the Overall Best Game at the Codingpirates 24-hour game jam. Went home with some sweets, a drone, and got interviewed by some unknown online magazine(there's a trash article about me somewhere don't mess with me).
+
+-   title: Best Graphics
+    company: Codingpirates Game Jam again ..
+    description: This time we implemented a game engine, a TCP/UDP server and client, and an online multiplayer platformer arena game in which you throw pets at other players. This was done in one go, no sleep with minimal coffee intake. The jury however found some buggy, memory-leaking(no comments) Scratch demo, more attractive than our masterpiece more interesting. I went home with a headache and a Microsoft exclusive USB.
