@@ -1,0 +1,194 @@
+body {
+    background-color: #f6f7ff;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+
+    font-family: "Lato", Helvitica;
+
+    zoom: 0.9;
+}
+
+h2 {
+    font-weight: 700;
+}
+
+h1 {
+    font-weight: 500;
+}
+
+.fish {
+    background-image: url("../res/awesome.gif");
+    background-size: cover;
+}
+
+.cap {
+    text-transform: uppercase;
+}
+
+.box {
+    border-radius: 20px;
+    box-shadow: rgba(74, 99, 131, 0.2) 0px 6px 15px 0px;
+    background-color: #ffffff;
+
+    padding: 20px;
+}
+
+.header {
+    width: 850px !important;
+    padding: 50px;
+}
+
+.low-pad {
+    padding: 25px;
+    padding-left: 50px;
+}
+
+.header > hr {
+    height: 2px;
+}
+
+.proper-margin {
+   top: 200px;
+}
+
+.sticky {
+    position: -webkit-sticky !important;
+    position: sticky !important;
+    top: 150px;
+}
+
+.structure {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.structure-header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.structure-header > .title {
+    width: 80% !important;
+}
+
+.structure-header > .title > h1 {
+    margin-bottom: -20px;
+}
+
+.menu {
+    min-width: 300px !important;
+    max-height: 500px;
+    margin-right: 50px;
+
+    background-color: #4a63e7;
+
+    color: white;
+
+    padding: 40px;
+}
+
+.footer {
+    bottom: 0px !important;
+    color: rgba(255, 255, 255, 0.8)
+}
+
+.small-nice {
+    width: 60% !important;
+    margin-left: 20%;
+}
+
+.profile-pic {
+    border-radius: 100%;
+    width: 90%;
+    box-shadow: rgba(74, 99, 131, 0.2) 0px 6px 15px 0px;
+}
+
+.small-af {
+    width: 35%;
+}
+
+.smaller-af {
+    width: 15%;
+}
+
+.side {
+    width: 400px;
+    margin-left: 5%;
+    height: 350px;
+
+    text-align: center;
+}
+
+.interests {
+    height: 250px;
+}
+
+.side > hr {
+    width: 100%;
+}
+
+hr {
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 1.2px;
+}
+
+.overview {
+    text-align: left;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.overview > .logo > a > i {
+    font-size: 60px;
+}
+
+.overview > .logo {
+    text-align: center;
+}
+
+.overview > .bread {
+    font-size: 18px;
+}
+
+
+.mobile-yes {
+    display: none;
+}
+
+.about-m {
+    text-align: center !important;
+}
+
+.about-m > img {
+    margin-left: 5%;
+}
+
+@media only screen and (max-width: 600px) {
+    .mobile-gone {
+        display: none;
+    }
+
+    .mobile-yes {
+        display: inline;
+    }
+
+    .header {
+        width: 100% !important;
+    }
+
+    body {
+        margin: 0px !important;
+        margin-left: -10px !important;
+        padding: 0px !important;
+    }
+
+    .small-nice {
+        margin: 0px;
+        padding-left: 30px;
+    }
+
+    .small-nice > img {
+        display: none;
+    }
+}

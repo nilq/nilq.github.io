@@ -1,0 +1,11 @@
+import math { sqrt, log }
+
+Bar: trait {
+    foobar: fun(int)
+}
+
+implement Foo: Bar {
+    foobar: fun(a: int) {
+        nil
+    }
+}
