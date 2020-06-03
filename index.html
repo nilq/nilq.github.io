@@ -1,200 +1,713 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <title>Niels N. Horn</title>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="generator" content="Hugo 0.71.1" />
+
+    <meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+
+<script>
+    (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=GTM-000000' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-000000');
+</script>
+
+
+<title></title>
+<style>
+     
+    .rad-fade-in {
+        will-change: opacity, transform;
+        animation-name: rad-fade-in-fallback;
+        animation-duration: 5s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-fade-in-fallback {
+        0% {
+            opacity: 0;
+        }
+
+        75% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .fonts-loaded .rad-fade-in.rad-waiting {
+        animation-name: none;
+        opacity: 0;
+    }
+
+    .fonts-loaded .rad-fade-in.rad-animate {
+        animation-name: rad-fade-in;
+        animation-duration: 1.1s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-fade-in {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+     
+    .rad-fade-in-long {
+        will-change: opacity, transform;
+        animation-name: rad-fade-in-long-fallback;
+        animation-duration: 8s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-fade-in-long-fallback {
+        0% {
+            opacity: 0;
+        }
+
+        75% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .fonts-loaded .rad-fade-in-long.rad-waiting {
+        animation-name: none;
+        opacity: 0;
+    }
+
+    .fonts-loaded .rad-fade-in-long.rad-animate {
+        animation-name: rad-fade-in-long;
+        animation-duration: 2s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-fade-in-long {
+        0% {
+            opacity: 0;
+        }
+
+        20% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+     
+    .rad-fade-down {
+        will-change: opacity, transform;
+        animation-name: rad-fade-down-fallback;
+        animation-duration: 5s;
+        animation-fill-mode: both;
+        transform: translateY(-30px);
+    }
+
+    @keyframes rad-fade-down-fallback {
+        0% {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+
+        75% {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .fonts-loaded .rad-fade-down.rad-waiting {
+        animation-name: none;
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    .fonts-loaded .rad-fade-down.rad-animate {
+        animation-name: rad-fade-down;
+        animation-duration: 1.1s;
+    }
+
+    @keyframes rad-fade-down {
+        0% {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+     
+    .rad-scale-down {
+        will-change: opacity, transform;
+        animation-name: rad-scale-down-fallback;
+        animation-duration: 5s;
+        animation-fill-mode: both;
+        transform-origin: 50% 0;
+    }
+
+    @keyframes rad-scale-down-fallback {
+        0% {
+            opacity: 0;
+            transform: scaleY(0.95);
+        }
+
+        75% {
+            opacity: 0;
+            transform: scaleY(0.95);
+        }
+
+        100% {
+            opacity: 1;
+            transform: scaleY(1);
+        }
+    }
+
+    .fonts-loaded .rad-scale-down.rad-waiting {
+        animation-name: none;
+        opacity: 0;
+        transform: scaleY(0.95);
+    }
+
+    .fonts-loaded .rad-scale-down.rad-animate {
+        animation-name: rad-scale-down;
+        animation-duration: 1.1s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-scale-down {
+        0% {
+            opacity: 0;
+            transform: scaleY(0.95);
+        }
+
+        100% {
+            opacity: 1;
+            transform: scaleY(1);
+        }
+    }
+</style>
+
+
+<link rel="stylesheet" href="https://raditian-hugo.radity.com/css/main.css"/>
+
+<link rel="stylesheet" href="https://raditian-hugo.radity.com/css/rad-icons.css"/>
+
+<link rel="stylesheet" href="https://raditian-hugo.radity.com/css/custom.css"/>
+
+
+    
+
+
+</head>
+
+<body>
+
+	<header class="header fixed-top rad-animation-group" id="header">
+  <div class="container rad-fade-in">
+    <nav class="navbar navbar-expand-lg navbar-light p-0">
+      <a class="navbar-brand" href="https://raditian-hugo.radity.com/">
+        <span style="margin-top: 10px; margin-bottom: 10px; color: #000;">Niels N. Horn</span>
         
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent, #header"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <link rel="stylesheet" type="text/css" href="css/main.css">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-lg-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://raditian-hugo.radity.com/">HOME</a>
+          </li>
+          
+          <li class="nav-item">
+            <a data-scroll class="nav-link" href="#about"
+              >ABOUT</a
+            >
+          </li>
+          
+          <li class="nav-item">
+            <a data-scroll class="nav-link" href="#portfolio"
+              >PROJECTS</a
+            >
+          </li>
+          
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
 
-        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/4533ee1e07.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <div class="structure header">
-            <div class="sticky box menu mobile-gone proper-margin">
-                <h2>Niels N. Horn</h2>
-                <hr>
-                <div class="cap">
-                    <p>Full-stack developer</p>
-                    <p>Data Science enthusiast</p>
-                    <p>Economics student</p>
-                </div>
 
-                <br><br>
-                <br><br>
-                <br><br>
+	
+	
+<section class="rad-showcase rad-showcase--index rad-animation-group rad-fade-down">
+  <div class="rad-showcase__bg">
+    <img
+      class="lozad img-responsive"
+      src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+      data-src="https://raditian-hugo.radity.com/img/showcase/showcase.png"
+      data-srcset="https://raditian-hugo.radity.com/img/showcase/showcase.png 1x, https://raditian-hugo.radity.com/img/showcase/showcase@2x.png 2x"
+      alt=""
+    />
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-8 col-lg-7 col-xl-6">
+        <h1 class="display-1">
+          Good day.
+          <br />
+          <span
+            >Welcome to my resumé.</span
+          >
+        </h1>
+        <p class="lead">
+          I'm a danish full-stack developer and college student. My interests consist of <b>data science</b>, <b>economics</b> and <b>martial arts</b>. During the week, I work as a full-stack web developer and attend Copenhagen International Business College.
+        </p>
+        <a
+          href="mailto:contact@niels.business"
+          class="btn btn-primary"
+        >
+          <i class="icon-mail-fill"></i>
+          contact@niels.business
+        </a>
+        <a
+          href="mailto:contact@niels.business"
+          class="btn btn-primary"
+        >
+          <i class="icon-profile-fill"></i>
+          Download CV
+        </a>
+      </div>
+    </div>
+    <div class="row platform-links">
+      <div class="col-12">
+        
+        <a href="https://www.linkedin.com/in/niels-nielsen-horn-50407616b/" target="_blank"
+          ><i class="icon-linkedin-line" style="font-size: 26px;"></i
+        ></a>
+        
+        <a href="https://github.com/nilq" target="_blank"
+          ><i class="icon-github-line" style="font-size: 26px;"></i
+        ></a>
+        
+      </div>
+    </div>
+  </div>
+  <div class="rad-showcase__bg rad-showcase__bg--mobile">
+    <img
+      class="lozad img-responsive"
+      src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+      data-src="https://raditian-hugo.radity.com/img/showcase/showcase-mobile.jpg"
+      alt=""
+    />
+  </div>
+</section>
 
-                <br><br>
+
+	
+	
+<section class="section rad-animation-group pb-0" id="about">
+  <div class="container rad-fade-down">
+    <div class="row d-flex flex-column-reverse flex-md-row">
+      <div class="about__profile-picture col-12 col-md-6">
+        <img
+          class="lozad img-responsive image-left-overflow"
+          src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+          data-src="https://raditian-hugo.radity.com/img/who-am-i/user-picture.png"
+          data-srcset="https://raditian-hugo.radity.com/img/who-am-i/user-picture.png 1x, https://raditian-hugo.radity.com/img/who-am-i/user-picture@2x.png 2x"
+          alt="Profile Picture"
+        />
+      </div>
+      <div class="col-12 col-md-6 my-auto my-auto">
+        <h2>About me</h2>
+        <p class="lead">
+           I am a Copenhagen-based college student, studying at Niels Brock's International Business College, specifically at the three-year Business & Economics Elite course. Apart from specializing in <b>Business Economics</b>, <b>International Economics</b>, <b>Mathematics</b>, <b>Social Studies</b> and <b>English</b>, I try to learn as much as I can about data science, machine learning and programming in general as I can, while also working as a web-developer on the side. 
+        </p>
+        <a
+          href="https://www.linkedin.com/in/niels-nielsen-horn-50407616b/"
+          target="_blank"
+          class="btn btn-primary"
+        >
+          <i class="icon-smile-fill"></i>
+          About Me
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
 
 
-                <hr>
-
-                <div class="footer">
-                    © 2020 Niels Horn
-                </div>
-            </div>
-
-            <div class="structure">
-                <div class="proper-margin">
-                    <div class="desktop-gone">
-                        <div class="box menu-mobile">
-                            <h2>Niels N. Horn</h2>
-                            <hr>
-                            <div class="cap">
-                                <p>Full-stack developer</p>
-                                <p>Data Science enthusiast</p>
-                                <p>Economics student</p>
-                            </div>
-            
-                            <hr>
-            
-                            <div class="footer">
-                                © 2020 Niels Horn
-                            </div>
-                        </div>
-
-                        <br><br>
-                    </div>
-
-                    <div class="header box">
-                        <div class="mobile-yes about-m">
-                            <img src="res/head.jpeg" alt="" class="profile-pic">
-                            <br>
-                            <div class="title">
-                                <br><br>
-                                <h1>About</h1>
-                                <hr>
-                            </div>
-                        </div>
-
-                        <div class="structure-header mobile-gone">
-                            <div>
-                                <img src="res/head.jpeg" alt="" class="profile-pic">
-                            </div>
-                            <div class="title">
-                                <br><br><br><br>
-                                <h1><b>About</b></h1>
-                                <br>
-                                <hr>
-                            </div>
-                        </div>
-                        <br>
-                        <p>
-                            Greeting
-                        </p>
-                    </div>
-    
-                    <br>
-                    <hr>
-                    <br>
-    
-                    <div class="header box low-pad small-nice structure">
-                        <div>
-                            <h5><i class="fas fa-university blue-text"></i> Business & Economics Elite</h5>
-                            <h6>Niels Brock - International Business College</h6>
-                            <h6 class="gray-text">From 2018 to 2021</h6>
-                        </div>
-                        <img src="res/brock.png" alt="" class="smaller-af logo" style="margin-left: 50px;">
-                    </div>
-
-                    <br>
-                    <br>
-
-                    <div class="header box low-pad small-nice structure">
-                        <div>
-                            <h5><i class="fas fa-cloud blue-text"></i> Development skills</h5>
-                            <h6>Independently learning programming and machine learning through the internet and books</h6>
-                            <h6 class="gray-text">From 2009 to present</h6>
-                        </div>
-                    </div>
-    
-                    <br>
-                    <hr>
-                    <br>
-    
-                    <div class="header box">
-                        <h3>Education</h3>
-                        <hr>
-                        <p>sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas </p>
-                    </div>
-    
-                    <br>
-                    <br>
-    
-                    <div class="header box">
-                        <h3>Skills</h3>
-                        <hr>
-                        <p>sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas </p>
-                    </div>
-    
-                    <br>
-                    <hr>
-                    <br>
-    
-                    <div class="header box small-nice menu" style="text-align: center;">
-                        <h1>Projects</h1>
-                    </div>
-    
-                    <br><br>
-    
-                    <div class="header box fish">
-                        <br><br><br><br><br>
-                        <br><br><br><br><br>
-                    </div>
-    
-                    <br><br>
-    
-                    <div class="header box">
-                        <h3>Recurrent Neural Network Simulation</h3>
-                        <hr>
-                        <p>sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas </p>
-                    </div>
-
-                    <br><br><br><br><br>
-
-                    <div class="header box fish">
-                        <br><br><br><br><br>
-                        <br><br><br><br><br>
-                    </div>
-    
-                    <br><br>
-    
-                    <div class="header box">
-                        <h3>Recurrent Neural Network Simulation</h3>
-                        <hr>
-                        <p>sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas sdkjsajkdjkas djsajkd sajkdj sajkd jkasd jkasjkd jkaskjdas </p>
-                    </div>
-                </div>
-
-                <div class="mobile-gone">
-                    <div class="side box">
-                        <h3>Overview</h3>
-                        <hr>
-                        <br>
-
-                        <div class="overview">
-                            <div class="logo">
-                                <a href="https://github.com/nilq" target="__blank">
-                                    <i class="fab fa-github"></i>
-                                    <br>
-                                    My GitHub
-                                </a>
-                            </div>
-
-                            <br>
-
-                            <div class="bread">
-                                <p>
-                                    Here you will find my contributions to open source projects, as well as my own personal projects and work.
-                                </p>
+	
+	
+<section class="section section--border-bottom rad-animation-group">
+    <div class="container">
+        <div class="row rad-fade-down">
+            <div class="col-12">
+                <h2>Education</h2>
+                <div class="row pt-2 pt-md-4">
+                    
+                    <div class="col-12 col-sm-6 mb-4 mb-sm-0">
+                        <div class="education">
+                            <div class="education__date">2018-2021</div>
+                            <div class="education__title">Business &amp; Economics Elite</div>
+                            <div class="education__degree">
+                                Copenhagen International Business College
                             </div>
                         </div>
                     </div>
+                    
+                    <div class="col-12 col-sm-6 mb-4 mb-sm-0">
+                        <div class="education">
+                            <div class="education__date">2009-present</div>
+                            <div class="education__title">Online learning</div>
+                            <div class="education__degree">
+                                Machine learning, mathematics, data science and various programming languages and paradigms, learned by doing and reading.
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
+    </div>
+</section>
+
+
+	
+	
+<section id="experience" class="section section--border-bottom rad-animation-group">
+    <div class="container">
+        <div class="row flex-column-reverse flex-md-row rad-fade-down">
+            <div class="col-12 col-sm-6 mt-5 mt-sm-0">
+                
+                <div class="experience">
+                    <div class="experience__date">July 2018 - present</div>
+                    <div class="experience__title">Full-stack web developer</div>
+                    <div class="experience__company">Dojo, Copenhagen</div>
+                </div>
+                
+            </div>
+            <div class="col-12 col-sm-6">
+                <h2>Experience</h2>
+                <p class="lead">
+                    My work experience primarily lies in the area of web development, implementing digital platforms from scratch with focus on responsiveness and agility. During my relatively small amount of time on the job market, I have worked with Vue.js, Gatsby, React, Firebase, Rust(diesel.rs, Rocket) and Django.
+                </p>
+                <a href="https://www.linkedin.com/in/niels-nielsen-horn-50407616b/" class="btn btn-primary"
+                   target="_blank">
+                    <i class="icon-linkedin-fill"></i>
+                    Linkedin
+                    <i class="icon-arrow-right"></i></a>
+                <a href="https://raditian-hugo.radity.com/" class="btn btn-frameless"
+                   target="_blank">
+                    <i class="icon-profile-fill"></i>
+                    Download CV
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+	
+	
+<section id="portfolio" class="section section--border-bottom">
+  <div class="container">
+    <h2 class=" rad-animation-group rad-fade-down">
+      Projects
+    </h2>
+    
+    <div
+      class="row row--padded rad-animation-group rad-fade-down flex-column-reverse flex-md-row"
+    >
+      
+      <div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto">
+        <h3>Hugorm</h3>
+        <p class="lead">
+          A dynamic programming language for data science and mathematics programming. One of my recent, recreational projects, I have been building a Python-like programming language with a modified and unique syntax. Hugorm is a multi-paradigm language running on a homemade virtual machine, designed around my personal day-to-day needs.
+        </p>
+        <a href="https://raditian-hugo.radity.com/" class="btn btn-primary"
+          >Case Study<i class="icon-arrow-right"></i
+        ></a>
+      </div>
+      <div class="col-12 col-md-7 pl-md-0 text-right">
+        <img
+          class='lozad img-responsive img-clip-left-backward'
+          src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+          data-src="https://raditian-hugo.radity.com/img/works/radity-finance.jpg"
+          data-srcset="https://raditian-hugo.radity.com/img/works/radity-finance.jpg 1x, https://raditian-hugo.radity.com/img/works/radity-finance@2x.jpg 2x"
+          alt="Hugorm"
+        />
+      </div>
+      
+    </div>
+    
+    <div
+      class="row row--padded rad-animation-group rad-fade-down "
+    >
+      
+      <div class="col-12 col-md-7 pl-md-0 text-right">
+        <img
+          class='lozad img-responsive img-clip-right-backward'
+          src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+          data-src="https://raditian-hugo.radity.com/img/works/swissfintech.jpg"
+          data-srcset="https://raditian-hugo.radity.com/img/works/swissfintech.jpg 1x, https://raditian-hugo.radity.com/img/works/swissfintech@2x.jpg 2x"
+          alt="Zub-VM"
+        />
+      </div>
+      <div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto">
+        <h3>Zub-VM</h3>
+        <p class="lead">
+          As my track-record of projects suggests, I have spent a considerable amount of time developing programming languages. I recently finished a stable implementation of a stack-based virtual machine, optimized to host dynamic languages using a concise bytecode. The speed of this VM ressembles the speed of Python, though being a bit slower without an optimizing pass.
+        </p>
+        <a href="https://raditian-hugo.radity.com/" class="btn btn-primary"
+          >Case Study<i class="icon-arrow-right"></i
+        ></a>
+      </div>
+      
+    </div>
+    
+    <div
+      class="row row--padded rad-animation-group rad-fade-down flex-column-reverse flex-md-row"
+    >
+      
+      <div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto">
+        <h3>Evolutionary Neural Networks</h3>
+        <p class="lead">
+          As a new and improved iteration of a simple biology project I had made around 2016(7th grade), I have been experimenting with various simulated environments hosting artificial life forms. The artificial &#39;life&#39; are based on damp-weighted recurrent neural networks (DWRAON networks for short) that have been hooked up to a virtual nerve-system and some simple legs for the creatures. This simulation has reached the state where it pretty much fulfills the purpose of a cozy aquarium.
+        </p>
+        <a href="https://raditian-hugo.radity.com/" class="btn btn-primary"
+          >Case Study<i class="icon-arrow-right"></i
+        ></a>
+      </div>
+      <div class="col-12 col-md-7 pl-md-0 text-right">
+        <img
+          class='lozad img-responsive img-clip-left-forward'
+          src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+          data-src="https://raditian-hugo.radity.com/img/works/cool.gif"
+          data-srcset="https://raditian-hugo.radity.com/img/works/cool.gif 1x, https://raditian-hugo.radity.com/img/works/cool.gif 2x"
+          alt="Evolutionary Neural Networks"
+        />
+      </div>
+      
+    </div>
+    
+    <div
+      class="row row--padded rad-animation-group rad-fade-down "
+    >
+      
+      <div class="col-12 col-md-7 pl-md-0 text-right">
+        <img
+          class='lozad img-responsive img-clip-right-forward'
+          src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+          data-src="https://raditian-hugo.radity.com/img/works/py.jpg"
+          data-srcset="https://raditian-hugo.radity.com/img/works/py.jpg 1x, https://raditian-hugo.radity.com/ 2x"
+          alt="Python for Finance"
+        />
+      </div>
+      <div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto">
+        <h3>Python for Finance</h3>
+        <p class="lead">
+          Though not resulting in a fully presentable final product, I have been using Python with NumPy, Pandas and MatplotLib for plotting and analyzing historical stock prices for school projects. This has opened my eyes for the efficiency of Python for working with large amounts of data, both when scraped from the internet, as well as when processed real-time using the Yahoo API.
+        </p>
+        <a href="https://raditian-hugo.radity.com/" class="btn btn-primary"
+          >Case Study<i class="icon-arrow-right"></i
+        ></a>
+      </div>
+      
+    </div>
+    
+    <div
+      class="row row--padded rad-animation-group rad-fade-down flex-column-reverse flex-md-row"
+    >
+      
+      <div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto">
+        <h3>The Wu Language</h3>
+        <p class="lead">
+          In 2017 I ignited my passion for programming language design. Around that time I had attended a lot of game jams, and liked developing small video games for game jam competitions and as a hobby. I developed Wu using the early versions of the Rust language, and designed it to be what I saw as the perfect language for my game development and AI-programming needs. The language transpiles to the Lua programming language, which is used for various game engines and machine learning tools like Torch. After the first stable version of the language it has gotten a considerable amount of attention on GitHub in the form of stars from programming language and game development enthusiasts and professionals.
+        </p>
+        <a href="https://raditian-hugo.radity.com/" class="btn btn-primary"
+          >Case Study<i class="icon-arrow-right"></i
+        ></a>
+      </div>
+      <div class="col-12 col-md-7 pl-md-0 text-right">
+        <img
+          class='lozad img-responsive img-clip-left-backward'
+          src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+          data-src="https://raditian-hugo.radity.com/img/works/wu.jpg"
+          data-srcset="https://raditian-hugo.radity.com/img/works/wu.jpg 1x, https://raditian-hugo.radity.com/ 2x"
+          alt="The Wu Language"
+        />
+      </div>
+      
+    </div>
+    
+    <div
+      class="row row--padded rad-animation-group rad-fade-down "
+    >
+      
+      <div class="col-12 col-md-7 pl-md-0 text-right">
+        <img
+          class='lozad img-responsive img-clip-right-backward'
+          src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+          data-src="https://raditian-hugo.radity.com/img/works/2dbois.gif"
+          data-srcset="https://raditian-hugo.radity.com/img/works/2dbois.gif 1x, https://raditian-hugo.radity.com/ 2x"
+          alt="Deep learning &amp; n-dimensional projection"
+        />
+      </div>
+      <div class="col-12 col-md-5 mt-4 mt-md-0 my-md-auto">
+        <h3>Deep learning &amp; n-dimensional projection</h3>
+        <p class="lead">
+          During the summer of 2017, I visited the Icelandic company Gagarín - a company specialising in visual experiences, by mixing digital art into the real world. Here I got to combine some of the things I was working on at that point: n-dimensional vector projection and homemade recurrent neural networks. In 2016 and 2017 I had read a lot about vectors and matrices, and had come up with some simple math for projecting a given vector down onto a 2D plane. On the GIF to the left, articial life like what&#39;s mentioned earlier can be seen - now in a 3D world. This was implemented using MoonScript.
+        </p>
+        <a href="https://raditian-hugo.radity.com/" class="btn btn-primary"
+          >Case Study<i class="icon-arrow-right"></i
+        ></a>
+      </div>
+      
+    </div>
+    
+  </div>
+</section>
+
+
+	
+	
+
+	
+
+	<footer class="footer">
+  <div class="container">
+    <div class="footer__left">
+      <div class="footer__copy">
         
-    </body>
+      </div>
+    </div>
+    <div class="footer__links">
+      <ul class="navbar-nav ">
+        <li class="nav-item">
+          <a class="nav-link" href="/">HOME</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="https://raditian-hugo.radity.com/">ABOUT</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="https://raditian-hugo.radity.com/">PORTFOLIO</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="https://raditian-hugo.radity.com/">CONTACT</a>
+        </li>
+        
+      </ul>
+    </div>
+    <div class="footer__right">
+      <a href="https://radity.com/"
+        ><img
+          src="https://raditian-hugo.radity.com/"
+          srcset="https://raditian-hugo.radity.com/ 1x, https://raditian-hugo.radity.com/ 2x"
+          alt=""
+      /></a>
+    </div>
+  </div>
+</footer>
+
+    <script src='https://raditian-hugo.radity.com/js/rad-animations.js'></script>
+<script src='https://raditian-hugo.radity.com/js/library/lozad.min.js'></script>
+<script>
+  window.addEventListener("load", function() {
+    var observer = window.lozad(".lozad", {
+      rootMargin: window.innerHeight / 2 + "px 0px",
+      threshold: 0.01
+    }); 
+    observer.observe();
+  });
+</script>
+<script src='https://raditian-hugo.radity.com/js/library/jquery-3.3.1.slim.min.js'></script>
+<script src='https://raditian-hugo.radity.com/js/library/bootstrap.min.js'></script>
+<script src='https://raditian-hugo.radity.com/js/sticky-header.js'></script>
+<script src='https://raditian-hugo.radity.com/js/library/smooth-scroll.polyfills.min.js'></script>
+<script src='https://raditian-hugo.radity.com/js/library/fontfaceobserver.js'></script>
+<script>
+  (function(w) {
+    
+    if (w.document.documentElement.className.indexOf("fonts-loaded") > -1) {
+      return;
+    }
+    var fontA = new w.FontFaceObserver("Inter", {
+      weight: 300
+    });
+    var fontB = new w.FontFaceObserver("Inter", {
+      weight: 400
+    });
+    var fontC = new w.FontFaceObserver("Inter", {
+      weight: 500
+    });
+    var fontD = new w.FontFaceObserver("Inter", {
+      weight: 600
+    });
+    var fontE = new w.FontFaceObserver("Inter", {
+      weight: 700
+    });
+    var fontF = new w.FontFaceObserver("Inter", {
+      weight: 900
+    });
+    w.Promise.all([fontA.load(), fontC.load(), fontF.load()]).then(function() {
+      w.document.documentElement.className += " fonts-loaded";
+    });
+  })(this);
+</script>
+<script>
+  const scroll = new SmoothScroll('a[href*="#"]');
+    $('a.nav-link').on('click', () => {
+      const navbar = $('.navbar-collapse');
+      if (navbar && navbar.hasClass('show')) {
+        $('.navbar-toggler').click();
+      }
+    })
+</script>
+
+</body>
+
 </html>
